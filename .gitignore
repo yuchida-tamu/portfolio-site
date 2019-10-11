@@ -1,0 +1,10 @@
+#ディレクトリを指定
+node_modules/
+
+#ファイルのパターン一致
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
