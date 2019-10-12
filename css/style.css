@@ -44,7 +44,8 @@ body {
 
 section {
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
 
 body {
   font-family: 'M PLUS 1p', sans-serif; }
@@ -72,7 +73,55 @@ body {
     width: 50rem; }
 
 .about-me {
-  background: #EFE7BC; }
+  background: #eeefbc;
+  color: #6D6D6D; }
+  .about-me .container {
+    position: absolute;
+    width: 140rem;
+    height: 60rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about-me .container h2 {
+      font-size: 3rem; }
+    .about-me .container .triangle-container {
+      width: 45rem;
+      height: 38rem;
+      margin: 3rem 0;
+      position: relative; }
+      .about-me .container .triangle-container .quality {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        display: flex;
+        margin: 0; }
+        .about-me .container .triangle-container .quality h3 {
+          color: #fff;
+          font-size: 2.5rem;
+          margin: auto;
+          text-align: center; }
+        .about-me .container .triangle-container .quality:nth-child(1) {
+          background: #74BDCB;
+          align-self: flex-end;
+          left: 50%;
+          transform: translateX(-50%); }
+        .about-me .container .triangle-container .quality:nth-child(2) {
+          background: #FFA384;
+          align-self: flex-start;
+          bottom: 0; }
+        .about-me .container .triangle-container .quality:nth-child(3) {
+          background: #95ce87;
+          align-self: flex-end;
+          right: 0;
+          bottom: 0; }
+    .about-me .container .description {
+      display: inline-block;
+      font-size: 1.5rem;
+      width: 50rem; }
 
 .work {
   background: #FFA384; }
@@ -93,6 +142,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   width: 8rem;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
