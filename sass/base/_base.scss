@@ -7,6 +7,15 @@
     box-sizing: inherit;
 }
 
+a,
+a:visited,
+a:active,
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 ul {
     list-style: none;
 }
@@ -20,7 +29,13 @@ html {
 
 body {
     box-sizing: border-box;
-   
+    width: 100vw;
+    position: relative;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
 }
 
 ::selection {

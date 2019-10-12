@@ -1,0 +1,8 @@
+body {
+    @include ja-font;
+}
+
+.primary-heading {
+    font-size: 5rem;
+    color: $color-white;
+}
