@@ -1,0 +1,44 @@
+/*applying the style to the pseudo selectors as well*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    //this defines the scale of 1rem
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+
+
+    @include respond(tab-port) {
+        font-size: 50%;//1rem = 8px
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12px
+    }
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+
+
