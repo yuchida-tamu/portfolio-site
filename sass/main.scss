@@ -1,16 +1,18 @@
 @import "abstracts/variables";
-@import "abstracts/mixins";         
+@import "abstracts/mixins";   
+
 
 @import "base/base";   
 @import "base/typography";   
 
+@import "pages/toppage";   
+@import "pages/about";
+@import "pages/about-me"; 
+@import "pages/work"; 
+ 
 
 @import "layout/header";
+@import "layout/footer";
 @import "layout/navigation"; 
-
-     
- 
-      
-
-@import "pages/toppage";   
+        
 
