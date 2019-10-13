@@ -10,13 +10,80 @@
     justify-content: center;
    
     @include box-shadow;
-    
 
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+     }
+
+     input[type=checkbox]:checked ~ .burger .burger__patty {
+        transform: rotate(90deg);
+        
+        
+        &:before {
+            transform: rotate(-40deg);
+            transform-origin: top left;
+            top: .1rem;
+            left: -.55rem;
+        }
+
+        &:after {
+            transform: rotate(40deg);
+            transform-origin: top left;
+            top: -.1rem;
+            left: -.5rem;
+        }
+     }
+
+    input[type=checkbox]:checked ~ .nav-bar .nav-bar__item {
+        height: 0;
+        opacity: 0;
+    }
+    
     .burger {
+        position: relative;
         width:100%;
         height: 8rem;
         background: $color-primary-dark; 
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+       
+        &__patty {
+            transition: .5s;
+            position: relative;
+            height: 2px;
+            width: 3rem;
+            background: $color-white;
+            border-radius: 5px;
+           
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 3rem;
+                background: $color-white;
+                border-radius: 5px;
+            }
+
+            &:before {
+                top: -1rem;
+            }
+
+            &:after {
+                top: 1rem;
+            }
+
+        }
     }
+
+
+    
 
     .nav-bar {
         display: flex;
@@ -31,17 +98,37 @@
             width:100%;
             height: 8rem;
             flex: 0 0 1;
-            
+            display: flex;
+            flex-direction: column;
+            transition: .5s;
             background: $color-primary-dark; 
+            justify-content: center;
+
+
             a {
+                position: relative;
                 height: 100%;
                 width: 100%;
-                display:inline-block;
+                display:block;
                 color: $color-white;
                 text-align:center;
-                margin: auto;
+                padding-top: 1rem;
+
+               i{
+                   position: absolute;
+                   @include center;
+               }
+                
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                border: 2px solid $color-primary-light;
             }
         }
+
+        
     }
     
 }
+

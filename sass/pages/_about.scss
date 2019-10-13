@@ -1,15 +1,21 @@
 .about {
     background: $color-primary-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
     .container {
+        position: absolute;
+        @include center;
+        width: 100rem;
+        text-align: center;
 
-        width: 50rem;
-        
-        .description {
-            
+        div {
+            position: absolute;
+            @include center;
+
+            h2 {
+                margin-bottom: 2rem;
+            }
         }
+        
     }
 }

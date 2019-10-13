@@ -22,18 +22,19 @@
             
 
             <nav class="nav">
-                    <div class="burger">
+                    <input type = "checkbox" id = "menu"> 
+                    <label class="burger" for = "menu">
                         <div class="burger__patty"></div>
-                    </div>
+                    </label>
                     <ul class="nav-bar">
-                        <li class="nav-bar__item"><a href="#toppage">Top<i class="fas fa-home"></i></a></li>
-                        <li class="nav-bar__item"><a href="#about-me">About Me<i class="fas fa-user"></i></a></li>
-                        <li class="nav-bar__item"><a href="#work">Work<i class="fas fa-briefcase"></i></a></li>
-                        <li class="nav-bar__item"><a href="#contact">Contact<i class="fas fa-paper-plane"></i></a></li>
+                        <li class="nav-bar__item"><a href="#toppage"><i class="fas fa-home fa-3x"></i></a></li>
+                        <li class="nav-bar__item"><a href="#about-me"><i class="fas fa-user fa-3x"></i></a></li>
+                        <li class="nav-bar__item"><a href="#work"><i class="fas fa-briefcase fa-3x"></i></a></li>
+                        <li class="nav-bar__item"><a href="#contact"><i class="fas fa-paper-plane fa-3x"></i></a></li>
                     </ul>
             </nav>
 
-            <div class="container">
+            <div>
                 <h1 class="primary-heading">
                     Welcome to My Portfolio Website
                 </h1>
@@ -42,13 +43,16 @@
         </section>
         <section class="about">
             <div class="container">
-                <h2>このウェブサイトについて</h2>
-                <p　class="description"> 
-                    ようこそ、サイトに来ていただきありがとうございます。
-                    このサイトでは、私のデザイン・制作したサイトまたはアプリを紹介しています。
-                    私のスキルセットなどをよりわかりやすく紹介するのがこのポートフォリオサイトの目的です。
-                    随時、アップデートしていくので、ご気軽にお尋ねください。
-                </p>
+                <div>
+                        <h2>このウェブサイトについて</h2>
+                        <p　class="description"> 
+                            ようこそ、サイトに来ていただきありがとうございます。
+                            このサイトでは、私のデザイン・制作したサイトまたはアプリを紹介しています。
+                            私のスキルセットなどをよりわかりやすく紹介するのがこのポートフォリオサイトの目的です。
+                            随時、アップデートしていくので、ご気軽にお尋ねください。
+                        </p>
+                </div>
+                
             </div>
         </section>
         <section class="about-me" id="about-me">
@@ -72,9 +76,92 @@
                 </p>
             </div>
         </section>
-        <section class="work" id="work"></section>
-        <section class="contact" id="contact"></section>
-        <footer class="footer"></footer>
+        <section class="work" id="work">
+            <div class="container">
+                <h2>Work Sample</h2>
+
+                <div class="work-container">
+                    <div class="work-container__item">
+                        <div class="work-container__item__content-box ">
+                            <h3>サンプル留学エージェンシー</h3>
+                            <p class="description">フロントエンドのスキルを磨く為に、架空の留学斡旋会社の企業サイトという設定で、
+                                ウェブサイトをデザイン、制作しました。実用性を上げる為にFirebaseを使用し、資料請求フォームからのデータもそちらで管理できるようにしています。
+                                デザイン、SASS、HTML, Javascriptなどフロントエンドのツールを効果的に使うことを意識しました。
+                            </p>
+                            <p class="fileds"><span>使用：</span>HTML5, CSS, Sass, npm, Javascript, Jquery, Firebase, Sketch, Photoshop</p>
+                            <a href="https://github.com/yuchida-tamu/sample-agency" target="/blank">Github</a>
+                            <a href="http://example-agency.sakura.ne.jp/" target="/blank">サイトをみる</a>
+                        </div>
+                        <div class="work-container__item__image-box"></div>
+                    </div>
+                    <div class="work-container__item">
+                        <div class="work-container__item__content-box ">
+                            <h3>イベントスケジュール管理アプリ</h3>
+                            <p class="description">
+                                Art-Listは、ユーザーがイベント情報を公開でき、興味のあるイベントは個人のページに追加することで管理できるアプリです。
+                                Ruby、そしてRailsを主に使用し、ほかにはGoogle Map API、Bootstrapなども使用しました。データベースはMySQLを使用し開発しました。
+                                初めてのオリジナルウェブアプリケーションです。画像投稿やチャットルームなど随時機能を追加していきたいと思っています。
+                            </p>
+                            <p class="fileds"><span>使用：</span>Ruby, Rails, HTML5, CSS, Javascript, Jquery, MySQL, Google Map API, Sketch</p>
+                            <a href="https://github.com/yuchida-tamu/art-list" target="/blank">Github</a>
+                            <a href="https://art-list.herokuapp.com/" target="/blank">サイトをみる</a>
+                        </div>
+                        <div class="work-container__item__image-box"></div>
+                    </div>
+                    <div class="work-container__item">
+                            <div class="work-container__item__content-box ">
+                                 <h3>ポートフォリオサイト</h3>
+                                 <p class="description">
+                                    このサイトも、自分でデザインしたものです。今までのプロジェクトを紹介するのが主な目的なので、凝りすぎずにシンプルで見やすい
+                                    デザインを心がけました。
+                                 </p>
+                                 <p class="fileds"><span>使用：</span>HTML5, CSS, Sass, npm</p>
+                                 <a href="https://github.com/yuchida-tamu/natour-webdesign" target="/blank">Github</a>
+                            </div>
+                            <div class="work-container__item__image-box"></div>
+                    </div>
+                    <div class="work-container__item">
+                        <div class="work-container__item__content-box ">
+                             <h3>旅行ツアーサイト</h3>
+                             <p class="description">
+                                 主にCSS,SASSの応用技術を学ぶ為に制作しました。オンラインコースでのチュートリアルを元に制作しています。レスポンシブなウェブサイトの
+                                 効果的な制作の仕方やよく使われるCSSのテクニックなどを学べました。
+                             </p>
+                             <p class="fileds"><span>使用：</span>HTML5, CSS, Sass, npm</p>
+                             <a href="https://github.com/yuchida-tamu/natour-webdesign" target="/blank">Github</a>
+                        </div>
+                        <div class="work-container__item__image-box"></div>
+                    </div>
+                    <div class="work-container__item">
+                        <div class="work-container__item__content-box ">
+                            <h3>その他サイドプロジェクト</h3>
+                            <p class="description">
+                                主にJavascriptなどの言語をスキルアップする為に、空いた時間に小さなプロジェクトをしたりしています。
+                                ゲーム開発に興味もあるので、大体が簡単なゲーム開発などです。
+                            </p>
+                            <p class="fileds"><span>使用：</span>HTML5, CSS, Javascript</p>
+                            <a href="https://github.com/yuchida-tamu/natour-webdesign" target="/blank">Github</a>
+                        </div>
+
+                        <div class="work-container__item__image-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>ありがとうございました。</h2>
+                <p>
+                    ご興味のある方、また質問をお持ちの方はお気軽にご連絡ください。
+                </p>
+                <a href = "mailto: yutaside1992@gmail.com">yutaside1992@gmail.com</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="copyright">
+                    &copy;Yuta Uchida 2019. This website is designed by Yuta Uchida
+            </p>
+        </footer>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

@@ -35,8 +35,15 @@ body {
 
 section {
     width: 100%;
-    min-height: 100vh;
+    height: 75rem;
     position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    @include center;
 }
 
 ::selection {

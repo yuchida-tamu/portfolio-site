@@ -1,0 +1,30 @@
+.contact {
+   .container {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $color-gray-dark;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+            
+            margin: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            
+            display: block;
+            width: 50rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            font-size: 1.5rem;
+            color: $color-primary;
+        }
+   }
+}
