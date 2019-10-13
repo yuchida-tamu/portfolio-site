@@ -20,13 +20,13 @@
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: flex-start;
-            align-items: center;;
+            align-items: center;
             padding: 0 6rem;
             
             
             &__item {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 height: 30rem;
                 width: 80rem;
                 border: 3px solid $color-secondary;
@@ -63,7 +63,8 @@
                &__image-box {
                    width: 40rem;
                    height:25rem;
-                   
+                   align-self: center;
+                   justify-self: center;
                }
             }
 

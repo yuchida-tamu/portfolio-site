@@ -161,7 +161,7 @@ h2 {
       padding: 0 6rem; }
       .work .container .work-container__item {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         height: 30rem;
         width: 80rem;
         border: 3px solid #FFA384;
@@ -187,7 +187,9 @@ h2 {
             margin-top: 1rem; }
         .work .container .work-container__item__image-box {
           width: 40rem;
-          height: 25rem; }
+          height: 25rem;
+          align-self: center;
+          justify-self: center; }
 
 .contact .container {
   display: flex;
