@@ -19,7 +19,7 @@
 
      input[type=checkbox]:checked ~ .burger .burger__patty {
         transform: rotate(90deg);
-        
+
         
         &:before {
             transform: rotate(-40deg);

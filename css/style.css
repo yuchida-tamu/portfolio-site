@@ -30,6 +30,9 @@ a:link {
   cursor: pointer;
   color: black; }
 
+img {
+  width: 100%; }
+
 ul {
   list-style: none; }
 
@@ -184,8 +187,7 @@ h2 {
             margin-top: 1rem; }
         .work .container .work-container__item__image-box {
           width: 40rem;
-          height: 25rem;
-          background: blue; }
+          height: 25rem; }
 
 .contact .container {
   display: flex;
